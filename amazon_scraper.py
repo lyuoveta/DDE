@@ -33,7 +33,7 @@ def scraper(url):
     reviews_data = {'review_dates': [i.text.split('on')[-1] for i in driver.find_elements(By.XPATH, "//span[@data-hook='review-date']")],
                     'review_places': [i.text.split('on')[0].split('the')[-1] for i in driver.find_elements(By.XPATH, "//span[@data-hook='review-date']")],
                     'review_ratings': [i.get_attribute('textContent')[0] for i in driver.find_elements(By.XPATH, "//i[@data-hook='review-star-rating']/span")],
-                    'review_authors': [i.text for i in driver.find_elements(By.CSS_SELECTOR, '#cm_cr-review_list .a-profile-name')],
+                    'review_authors': [i.text for i in driver.find_elements(By.CSS_SELECTOR, '#cm_cr-review_list .a-profile-name') if i.text != ''],
                     'review_titles': [i.text for i in driver.find_elements(By.XPATH, "//a[@data-hook='review-title']/span") if i.text != ''],
                     'reviews': [i.text for i in driver.find_elements(By.XPATH, '//span[@data-hook="review-body"]')]}        
 
@@ -75,5 +75,5 @@ def core(asin_list):
     except Exception as e:
         return f'Error: {e}'
     
-asin_list = ['B002EA99HE', 'B000OA6Z6O']
+asin_list = ['B009SZXM4E','B002EA99HE', 'B000OA6Z6O', 'B07GSGWZMB', 'B07S38C5WW']
 core(asin_list)
