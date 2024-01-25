@@ -17,7 +17,7 @@
 - *Webscraping* - код для парсинга данных с WebMD и Amazon
 
 ### Дополнительные материалы:
-* Презентация: [*Ссылка на гугл презентацию*](https://docs.google.com/presentation/d/1al_-8AfYyLxuaTMxnPE4dZB6pDeUlVGrJikFGWUp84/edit#slide=id.ge468db4b04_0_3)
+* Презентация: [*Ссылка на гугл презентацию*](https://docs.google.com/presentation/d/1al_-8AfYyL-xuaTMxnPE4dZB6pDeUlVGrJikFGWUp84)
 * Чат-бот: [*Ссылка на телеграмм канал*](https://t.me/SideSafe_bot)
 
 ## ___Описание:___ 
